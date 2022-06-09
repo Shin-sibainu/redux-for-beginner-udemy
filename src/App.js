@@ -1,3 +1,4 @@
+import CartContainer from "./components/CartContainer";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     // </div>
     <main>
       <Navbar />
+      <CartContainer />
     </main>
   );
 }
