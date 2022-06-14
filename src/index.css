@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
 /*
 =============== 
 Variables
@@ -5,9 +6,9 @@ Variables
 */
 
 :root {
-  --clr-primary: #645cff;
-  --clr-primary-dark: #282566;
-  --clr-primary-light: #a29dff;
+  --clr-primary: #c2773e;
+  --clr-primary-dark: #886f2c;
+  --clr-primary-light: #6d5016;
   --clr-grey-1: #102a42;
   --clr-grey-5: #617d98;
   --clr-grey-10: #f1f5f8;
@@ -27,8 +28,7 @@ Variables
   box-sizing: border-box;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   background: var(--clr-grey-10);
   color: var(--clr-grey-1);
   line-height: 1.5;
@@ -170,7 +170,7 @@ Cart
   width: 90vw;
   margin: 0 auto;
   margin-top: 40px;
-  padding: 2.5rem 0;
+  padding: 1.5rem 0;
   max-width: var(--fixed-width);
 }
 .cart h2 {
@@ -221,18 +221,18 @@ Cart Item
   display: grid;
   align-items: center;
   grid-template-columns: auto 1fr auto;
-  grid-column-gap: 1.5rem;
+  grid-column-gap: 1.6rem;
   margin: 1.5rem 0;
 }
 .cart-item img {
-  width: 5rem;
-  height: 5rem;
+  width: 12rem;
+  height: 7rem;
   object-fit: cover;
 }
 .cart-item h4 {
   margin-bottom: 0.5rem;
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 1.2px;
 }
 .item-price {
   color: var(--clr-grey-5);
@@ -260,16 +260,17 @@ Cart Item
   color: var(--clr-primary);
 }
 .amount-btn:hover svg {
-  color: var(--clr-primary-light);
+  color: var(--clr-grey-5);
 }
 .amount {
   text-align: center;
   margin-bottom: 0;
   font-size: 1.25rem;
   line-height: 1;
+  margin-bottom: 6px;
 }
 hr {
-  background: var(--clr-grey-5);
+  background: var(--clr-primary);
   border-color: transparent;
   border-width: 0.25px;
 }

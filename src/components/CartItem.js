@@ -1,4 +1,4 @@
-import { ChevronDown, ChevronUp } from "../icons";
+import { PlusIcon, MinusIcon } from "../icons";
 import { removeItem, increase, decrease } from "../features/cart/CartSlice";
 import { useDispatch } from "react-redux";
 
@@ -21,7 +21,7 @@ const CartItem = ({ id, img, title, price, amount }) => {
             dispatch(increase({ id }));
           }}
         >
-          <ChevronUp />
+          <PlusIcon />
         </button>
         <p className="amount">{amount}</p>
         <button
@@ -34,7 +34,7 @@ const CartItem = ({ id, img, title, price, amount }) => {
             dispatch(decrease({ id }));
           }}
         >
-          <ChevronDown />
+          <MinusIcon />
         </button>
       </div>
     </article>
