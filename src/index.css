@@ -1,20 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
 /*
-=============== 
+Font 
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+
+/*
 Variables
-===============
 */
 
 :root {
-  --clr-primary: #c2773e;
-  --clr-primary-dark: #886f2c;
-  --clr-primary-light: #6d5016;
-  --clr-grey-1: #102a42;
-  --clr-grey-5: #617d98;
-  --clr-grey-10: #f1f5f8;
-  --clr-white: #fff;
-  --clr-red-dark: hsl(360, 67%, 44%);
-  --clr-red-light: hsl(360, 71%, 66%);
+  --color-primary: #c2773e;
+  --color-primary-dark: #886f2c;
+  --color-primary-light: #6d5016;
+  --color-grey-1: #102a42;
+  --color-grey-5: #617d98;
+  --color-grey-10: #f1f5f8;
+  --color-white: #fff;
+  --color-red-dark: hsl(360, 67%, 44%);
+  --color-red-light: hsl(360, 71%, 66%);
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.25rem;
@@ -29,8 +31,8 @@ Variables
 }
 body {
   font-family: "Noto Sans JP", sans-serif;
-  background: var(--clr-grey-10);
-  color: var(--clr-grey-1);
+  background: var(--color-grey-10);
+  color: var(--color-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -92,8 +94,8 @@ p {
 
 .btn {
   text-transform: uppercase;
-  background: var(--clr-primary);
-  color: var(--clr-white);
+  background: var(--color-primary);
+  color: var(--color-white);
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
@@ -105,21 +107,19 @@ p {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 .btn:hover {
-  color: var(--clr-primary);
-  background: var(--clr-primary-light);
+  color: var(--color-primary);
+  background: var(--color-primary-light);
 }
 
-/*
-=============== 
+/* 
 Navbar
-===============
 */
 .loading {
   text-align: center;
   margin-top: 5rem;
 }
 nav {
-  background: var(--clr-primary);
+  background: var(--color-primary);
   padding: 1.25rem 2rem;
 }
 .nav-center {
@@ -133,7 +133,7 @@ nav {
 nav h3 {
   margin-bottom: 0;
   letter-spacing: 1px;
-  color: var(--clr-white);
+  color: var(--color-white);
 }
 .nav-container {
   display: block;
@@ -141,7 +141,7 @@ nav h3 {
 }
 nav svg {
   width: 40px;
-  color: var(--clr-white);
+  color: var(--color-white);
 }
 .amount-container {
   position: absolute;
@@ -150,20 +150,19 @@ nav svg {
   width: 1.75rem;
   height: 1.75rem;
   border-radius: 50%;
-  background: var(--clr-primary-light);
+  background: var(--color-primary-light);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .total-amount {
-  color: var(--clr-white);
+  color: var(--color-white);
   margin-bottom: 0;
   font-size: 1.25rem;
 }
+
 /*
-=============== 
 Cart
-===============
 */
 .cart {
   min-height: calc(100vh - 120px);
@@ -180,7 +179,7 @@ Cart
 }
 .empty-cart {
   text-transform: lowercase;
-  color: var(--clr-grey-5);
+  color: var(--color-grey-5);
   margin-top: 1rem;
   text-align: center;
 }
@@ -198,24 +197,23 @@ Cart
 .confirm-btn {
   background: transparent;
   padding: 0.5rem 1rem;
-  color: var(--clr-red-dark);
-  border: 1px solid var(--clr-red-dark);
+  color: var(--color-red-dark);
+  border: 1px solid var(--color-red-dark);
   margin-top: 2.25rem;
   border-radius: var(--radius);
 }
 .clear-btn:hover {
-  background: var(--clr-red-light);
-  color: var(--clr-red-dark);
-  border-color: var(--clr-red-light);
+  background: var(--color-red-light);
+  color: var(--color-red-dark);
+  border-color: var(--color-red-light);
 }
 .confirm-btn {
-  border-color: var(--clr-primary);
-  color: var(--clr-primary);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
 }
+
 /*
-=============== 
 Cart Item
-===============
 */
 .cart-item {
   display: grid;
@@ -235,10 +233,10 @@ Cart Item
   letter-spacing: 1.2px;
 }
 .item-price {
-  color: var(--clr-grey-5);
+  color: var(--color-grey-5);
 }
 .remove-btn {
-  color: var(--clr-primary);
+  color: var(--color-primary);
   letter-spacing: var(--spacing);
   cursor: pointer;
   font-size: 0.85rem;
@@ -248,7 +246,7 @@ Cart Item
   transition: var(--transition);
 }
 .remove-btn:hover {
-  color: var(--clr-primary-light);
+  color: var(--color-primary-light);
 }
 .amount-btn {
   width: 24px;
@@ -257,10 +255,10 @@ Cart Item
   cursor: pointer;
 }
 .amount-btn svg {
-  color: var(--clr-primary);
+  color: var(--color-primary);
 }
 .amount-btn:hover svg {
-  color: var(--clr-grey-5);
+  color: var(--color-grey-5);
 }
 .amount {
   text-align: center;
@@ -270,7 +268,7 @@ Cart Item
   margin-bottom: 6px;
 }
 hr {
-  background: var(--clr-primary);
+  background: var(--color-primary);
   border-color: transparent;
   border-width: 0.25px;
 }
@@ -289,7 +287,7 @@ hr {
 }
 
 .modal {
-  background: var(--clr-white);
+  background: var(--color-white);
   width: 80vw;
   max-width: 400px;
   border-radius: var(--radius);
